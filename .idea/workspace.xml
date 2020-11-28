@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ecd5515c-46ce-42b0-bbcf-7857cb2fd926" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="pixel_API_30" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1k6cTNEiWQRujoehrXVnqhxo6TH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecd5515c-46ce-42b0-bbcf-7857cb2fd926" name="Default Changelist" comment="" />
+      <created>1605024489714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605024489714</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="57" key="#Notifications" timestamp="1605810485104">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="275" y="57" key="#Notifications/0.30.1366.738@0.30.1366.738" timestamp="1605810485104" />
+    <state x="363" y="126" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606576765609">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="363" y="126" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.30.1366.738@0.30.1366.738" timestamp="1606576765609" />
+    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606325478413">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1366.738@0.30.1366.738" timestamp="1606325478413" />
+    <state width="493" height="452" key="DebuggerActiveHint" timestamp="1606330154551">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="493" height="452" key="DebuggerActiveHint/0.30.1366.738@0.30.1366.738" timestamp="1606330154551" />
+    <state x="121" y="153" key="FileChooserDialogImpl" timestamp="1606328648329">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="121" y="153" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1606328648329" />
+    <state width="1323" height="147" key="GridCell.Tab.0.bottom" timestamp="1606590605323">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1323" height="147" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1606590605323" />
+    <state width="1323" height="147" key="GridCell.Tab.0.center" timestamp="1606590605323">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1323" height="147" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1606590605323" />
+    <state width="1323" height="147" key="GridCell.Tab.0.left" timestamp="1606590605322">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1323" height="147" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1606590605322" />
+    <state width="1323" height="147" key="GridCell.Tab.0.right" timestamp="1606590605323">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1323" height="147" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1606590605323" />
+    <state x="184" y="41" key="SettingsEditor" timestamp="1606577248267">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="184" y="41" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1606577248267" />
+    <state x="82" y="150" width="1182" height="554" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1606589001718">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="82" y="150" width="1182" height="554" key="com.android.tools.idea.avdmanager.AvdListDialog/0.30.1366.738@0.30.1366.738" timestamp="1606589001718" />
+    <state x="247" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1606582838997">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="247" y="222" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1606582838997" />
+    <state x="339" y="180" key="run.anything.popup" timestamp="1606333772848">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="339" y="180" key="run.anything.popup/0.30.1366.738@0.30.1366.738" timestamp="1606333772848" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1606575796540">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1606575796540" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint suspend="THREAD" type="dart-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

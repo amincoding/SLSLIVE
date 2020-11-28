@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "474030139217",
+    "firebase_url": "https://slslivestream-68824.firebaseio.com",
+    "project_id": "slslivestream-68824",
+    "storage_bucket": "slslivestream-68824.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474030139217:android:ce82568e3dfbde97649570",
+        "android_client_info": {
+          "package_name": "com.example.temp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474030139217-qmvp21pab25bgulm5fmcmn313ha854d9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs17Cw7Ibp67llhNLXD7jQm100x-37sHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474030139217-qmvp21pab25bgulm5fmcmn313ha854d9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
