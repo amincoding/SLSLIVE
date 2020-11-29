@@ -45,7 +45,7 @@ class _homeFeedsState extends State<homeFeeds> {
                   child: IconButton(
                     icon: SvgPicture.asset('assets/home_icon.svg'),
                     onPressed: () {
-                      Navigator.pushNamed(context, homeFeeds.id);
+                      Navigator.pushReplacementNamed(context, homeFeeds.id);
                     },
                   ),
                 ),
@@ -107,7 +107,8 @@ class _homeFeedsState extends State<homeFeeds> {
                       icon:
                           SvgPicture.asset('assets/profilePicHolder_icon.svg'),
                       onPressed: () {
-                        if(SLS.isAdming()){
+                        var status = SLS.isAdming(SLS.Email);
+                        if(status == true){
                           Navigator.pushReplacementNamed(context, profile_screen_sp.id);
                         }else{
                           Navigator.pushReplacementNamed(context, profile_screen.id);
