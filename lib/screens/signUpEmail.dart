@@ -185,8 +185,7 @@ class _signUpEmailState extends State<signUpEmail> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 25),
                     child: TextFormField(
-                      validator: (val) =>
-                          val.isEmpty ? 'Enter an E-mail' : null,
+                      validator: (val) => val.endsWith('com') || !val.contains('@') || !val.contains('.') ? 'not valid' : null ,
                       onChanged: (val) {
                         setState(() => _email = val);
                       },

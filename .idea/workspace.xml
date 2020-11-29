@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecd5515c-46ce-42b0-bbcf-7857cb2fd926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/no_notification_bell.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/HOMEPAGE/notifications.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/SLS.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SLS.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/HOMEPAGE/home_feeds.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/HOMEPAGE/home_feeds.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/HOMEPAGE/messages.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/HOMEPAGE/messages.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/signUpEmail.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/signUpEmail.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/signin_email.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/signin_email.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606673024332</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="second">
+      <created>1606675029115</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606675029115</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -125,10 +129,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1366.738@0.30.1366.738" timestamp="1606325478413" />
-    <state x="337" y="30" key="CommitChangelistDialog2" timestamp="1606673022687">
+    <state x="337" y="30" key="CommitChangelistDialog2" timestamp="1606675027655">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="337" y="30" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1606673022687" />
+    <state x="337" y="30" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1606675027655" />
     <state width="493" height="452" key="DebuggerActiveHint" timestamp="1606330154551">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -137,30 +141,30 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="121" y="153" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1606328648329" />
-    <state width="1323" height="147" key="GridCell.Tab.0.bottom" timestamp="1606671254696">
+    <state width="1323" height="147" key="GridCell.Tab.0.bottom" timestamp="1606675032693">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="147" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1606671254696" />
-    <state width="1323" height="147" key="GridCell.Tab.0.center" timestamp="1606671254696">
+    <state width="1323" height="147" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1606675032693" />
+    <state width="1323" height="147" key="GridCell.Tab.0.center" timestamp="1606675032692">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="147" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1606671254696" />
-    <state width="1323" height="147" key="GridCell.Tab.0.left" timestamp="1606671254696">
+    <state width="1323" height="147" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1606675032692" />
+    <state width="1323" height="147" key="GridCell.Tab.0.left" timestamp="1606675032692">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="147" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1606671254696" />
-    <state width="1323" height="147" key="GridCell.Tab.0.right" timestamp="1606671254696">
+    <state width="1323" height="147" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1606675032692" />
+    <state width="1323" height="147" key="GridCell.Tab.0.right" timestamp="1606675032693">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="147" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1606671254696" />
+    <state width="1323" height="147" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1606675032693" />
     <state x="184" y="41" key="SettingsEditor" timestamp="1606577248267">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="184" y="41" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1606577248267" />
-    <state x="275" y="131" key="Vcs.Push.Dialog.v2" timestamp="1606673031874">
+    <state x="275" y="131" key="Vcs.Push.Dialog.v2" timestamp="1606675040801">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="275" y="131" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1606673031874" />
+    <state x="275" y="131" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1606675040801" />
     <state x="82" y="150" width="1182" height="554" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1606589001718">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

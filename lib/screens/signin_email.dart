@@ -11,6 +11,8 @@ import 'package:viplive/screens/signUpEmail.dart';
 import 'package:viplive/screens/waiting_screen.dart';
 import 'package:viplive/services/auth.dart';
 import '../constants.dart';
+import 'package:email_validator/email_validator.dart';
+
 
 // ignore: camel_case_types
 class signin_email extends StatefulWidget {
@@ -152,7 +154,7 @@ class _signin_emailState extends State<signin_email> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: TextFormField(
-                    validator: (val) => val.isEmpty ? 'Enter your email' : null,
+                    validator: (val) => val.endsWith('com') || !val.contains('@') || !val.contains('.') ? 'not valide' : null ,
                     onSaved: (val) {
                       setState(() {
                         SLS.Email = val;
