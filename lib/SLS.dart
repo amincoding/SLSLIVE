@@ -12,8 +12,15 @@ class SLS extends StatefulWidget {
   static int Followers = 0;
   static int NewMembers = 0;
   static List<String> MembersList = [''];
-  static bool isAdmin = false;
   static int new_messages = 2;
+
+  static bool isAdming(){
+    if (SLS.Email == "aminebr70@gmail.com"){
+      return true;
+    }else{
+      return false;
+    }
+  }
 
 
 

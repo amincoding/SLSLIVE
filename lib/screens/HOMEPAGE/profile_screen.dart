@@ -325,7 +325,7 @@ class _profile_screenState extends State<profile_screen> {
                             ),
                           ),
                           onPressed: () {
-
+                            Navigator.pushReplacementNamed(context, profile_screen_sp.id);
                           }),
                     ),
                   ),

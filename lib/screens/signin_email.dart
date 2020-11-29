@@ -32,8 +32,6 @@ class _signin_emailState extends State<signin_email> {
   bool _checked = false;
   final _formkey = GlobalKey<FormState>();
 
-  String _email;
-  String _password;
   FormType _formType = FormType.login;
 
   bool validateAndSave() {
@@ -50,10 +48,10 @@ class _signin_emailState extends State<signin_email> {
     if (validateAndSave()) {
       try {
         String userId = await widget.auth
-            .signInWithEmailAndPassword(_email.trim(), _password);
+            .signInWithEmailAndPassword(SLS.Email.trim(), SLS.password);
         UserCredential user = await FirebaseAuth.instance
             .signInWithEmailAndPassword(
-                email: _email.trim(), password: _password);
+                email: SLS.Email.trim(), password: SLS.password);
         // ignore: unnecessary_brace_in_string_interps
         print("signed in : ${userId}");
         if (user != null) {
@@ -157,7 +155,7 @@ class _signin_emailState extends State<signin_email> {
                     validator: (val) => val.isEmpty ? 'Enter your email' : null,
                     onSaved: (val) {
                       setState(() {
-                        _email = val;
+                        SLS.Email = val;
                       });
                     },
                     decoration: InputDecoration(
@@ -188,7 +186,7 @@ class _signin_emailState extends State<signin_email> {
                         val.length < 8 ? 'Enter a password 8+ long' : null,
                     onSaved: (val) {
                       setState(() {
-                        _password = val;
+                        SLS.password = val;
                       });
                     },
                     obscureText: true,

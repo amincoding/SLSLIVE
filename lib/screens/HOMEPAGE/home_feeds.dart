@@ -2,9 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:viplive/SLS.dart';
 import 'package:viplive/constants.dart';
 import 'package:viplive/screens/DASHBOARD/Admin_new_mambers.dart';
 import 'package:viplive/screens/HOMEPAGE/profile_screen.dart';
+import 'package:viplive/screens/HOMEPAGE/profile_screen_sp.dart';
 import 'package:viplive/services/auth.dart';
 
 import 'messages.dart';
@@ -105,7 +107,11 @@ class _homeFeedsState extends State<homeFeeds> {
                       icon:
                           SvgPicture.asset('assets/profilePicHolder_icon.svg'),
                       onPressed: () {
-                        Navigator.pushReplacementNamed(context, profile_screen.id);
+                        if(SLS.isAdming()){
+                          Navigator.pushReplacementNamed(context, profile_screen_sp.id);
+                        }else{
+                          Navigator.pushReplacementNamed(context, profile_screen.id);
+                        }
                       },
                     ),
                   ),
