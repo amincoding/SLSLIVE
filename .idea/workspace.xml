@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecd5515c-46ce-42b0-bbcf-7857cb2fd926" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/screens/Loading.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/passWord_forget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/signUpEmail.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/signUpEmail.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/signin_email.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/signin_email.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Dart File" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
@@ -44,6 +50,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amin\Downloads\SLSLIVE\lib\widgets" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -112,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606678252204</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="second">
+      <created>1606678617840</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606678617840</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,10 +151,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1366.738@0.30.1366.738" timestamp="1606325478413" />
-    <state x="337" y="30" key="CommitChangelistDialog2" timestamp="1606678250782">
+    <state x="337" y="30" key="CommitChangelistDialog2" timestamp="1606678616414">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="337" y="30" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1606678250782" />
+    <state x="337" y="30" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1606678616414" />
     <state width="493" height="452" key="DebuggerActiveHint" timestamp="1606330154551">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -145,30 +163,30 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="121" y="153" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1606328648329" />
-    <state width="1323" height="147" key="GridCell.Tab.0.bottom" timestamp="1606675032693">
+    <state width="1323" height="147" key="GridCell.Tab.0.bottom" timestamp="1606680512554">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="147" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1606675032693" />
-    <state width="1323" height="147" key="GridCell.Tab.0.center" timestamp="1606675032692">
+    <state width="1323" height="147" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1606680512554" />
+    <state width="1323" height="147" key="GridCell.Tab.0.center" timestamp="1606680512553">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="147" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1606675032692" />
-    <state width="1323" height="147" key="GridCell.Tab.0.left" timestamp="1606675032692">
+    <state width="1323" height="147" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1606680512553" />
+    <state width="1323" height="147" key="GridCell.Tab.0.left" timestamp="1606680512553">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="147" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1606675032692" />
-    <state width="1323" height="147" key="GridCell.Tab.0.right" timestamp="1606675032693">
+    <state width="1323" height="147" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1606680512553" />
+    <state width="1323" height="147" key="GridCell.Tab.0.right" timestamp="1606680512553">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="147" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1606675032693" />
+    <state width="1323" height="147" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1606680512553" />
     <state x="184" y="41" key="SettingsEditor" timestamp="1606577248267">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="184" y="41" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1606577248267" />
-    <state x="275" y="131" key="Vcs.Push.Dialog.v2" timestamp="1606678259665">
+    <state x="275" y="131" key="Vcs.Push.Dialog.v2" timestamp="1606678625477">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="275" y="131" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1606678259665" />
+    <state x="275" y="131" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1606678625477" />
     <state x="82" y="150" width="1182" height="554" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1606589001718">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

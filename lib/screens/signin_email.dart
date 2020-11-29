@@ -1,3 +1,5 @@
+
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -10,8 +12,10 @@ import 'package:viplive/screens/Start.dart';
 import 'package:viplive/screens/signUpEmail.dart';
 import 'package:viplive/screens/waiting_screen.dart';
 import 'package:viplive/services/auth.dart';
+import 'package:viplive/widgets/passWord_forget.dart';
 import '../constants.dart';
 import 'package:email_validator/email_validator.dart';
+import 'Loading.dart';
 
 
 // ignore: camel_case_types
@@ -23,6 +27,9 @@ class signin_email extends StatefulWidget {
   static String id = 'signin_email';
   static bool signedIn;
 
+
+
+
   @override
   _signin_emailState createState() => _signin_emailState();
 }
@@ -33,6 +40,18 @@ enum FormType { login, register }
 class _signin_emailState extends State<signin_email> {
   bool _checked = false;
   final _formkey = GlobalKey<FormState>();
+  bool loading = false;
+  bool forget = false;
+
+  three(){
+      return Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            password_forget(),
+          ]
+      );
+  }
+
 
   FormType _formType = FormType.login;
 
@@ -48,6 +67,7 @@ class _signin_emailState extends State<signin_email> {
 
   void validateAndSubmit() async {
     if (validateAndSave()) {
+      setState(() => loading = true);
       try {
         String userId = await widget.auth
             .signInWithEmailAndPassword(SLS.Email.trim(), SLS.password);
@@ -63,6 +83,7 @@ class _signin_emailState extends State<signin_email> {
         }
       } catch (e) {
         print(e.toString());
+        setState(() => loading = false);
       }
     }
   }
@@ -72,7 +93,7 @@ class _signin_emailState extends State<signin_email> {
 
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
-    return Scaffold(
+    return loading ? Loading() : Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,
@@ -214,8 +235,9 @@ class _signin_emailState extends State<signin_email> {
             ),
           ),
           SizedBox(
-            height: height * 0.01,
+            height: height * 0.02,
           ),
+          three(),
           CheckboxListTile(
             title: Text("I accept the Terms of Use"),
             controlAffinity: ListTileControlAffinity.leading,
@@ -234,12 +256,12 @@ class _signin_emailState extends State<signin_email> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8)),
                 onPressed: () {
-                  if (_checked == true) {
-                    validateAndSubmit();
-                  }else{
-                    _checked = true;
-                  }
-                },
+                    if (_checked == true) {
+                      validateAndSubmit();
+                    } else {
+                      _checked = true;
+                    }
+                  },
                 color: KTextFeildSingUpColor,
                 child: Text('Log In',
                     textAlign: TextAlign.left,
