@@ -234,7 +234,11 @@ class _signin_emailState extends State<signin_email> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8)),
                 onPressed: () {
-                  validateAndSubmit();
+                  if (_checked == true) {
+                    validateAndSubmit();
+                  }else{
+                    _checked = true;
+                  }
                 },
                 color: KTextFeildSingUpColor,
                 child: Text('Log In',

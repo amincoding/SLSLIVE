@@ -260,7 +260,11 @@ class _signUpEmailState extends State<signUpEmail> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8)),
                 onPressed: () async {
-                  validateAndSubmit();
+                  if (_checked == true) {
+                    validateAndSubmit();
+                  }else{
+                    _checked = true;
+                  }
                 },
                 color: KTextFeildSingUpColor,
                 child: Text('Sign up',
