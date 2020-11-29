@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ecd5515c-46ce-42b0-bbcf-7857cb2fd926" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/SLS.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SLS.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/HOMEPAGE/home_feeds.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/HOMEPAGE/home_feeds.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/HOMEPAGE/profile_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/HOMEPAGE/profile_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606664367620</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="second">
+      <created>1606671482722</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606671482736</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -102,10 +108,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1366.738@0.30.1366.738" timestamp="1606325478413" />
-    <state x="337" y="30" key="CommitChangelistDialog2" timestamp="1606664366230">
+    <state x="337" y="30" key="CommitChangelistDialog2" timestamp="1606671480273">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="337" y="30" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1606664366230" />
+    <state x="337" y="30" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1606671480273" />
     <state width="493" height="452" key="DebuggerActiveHint" timestamp="1606330154551">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -134,10 +140,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="184" y="41" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1606577248267" />
-    <state x="275" y="131" key="Vcs.Push.Dialog.v2" timestamp="1606665373115">
+    <state x="275" y="131" key="Vcs.Push.Dialog.v2" timestamp="1606671487256">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="275" y="131" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1606665373115" />
+    <state x="275" y="131" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1606671487256" />
     <state x="82" y="150" width="1182" height="554" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1606589001718">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
