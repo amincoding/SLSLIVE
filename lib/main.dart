@@ -35,6 +35,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'screens/DASHBOARD/Dashboard_Seller_checked.dart';
 import 'screens/DASHBOARD/Dashboard_Admin_checked.dart';
 import 'screens/HOMEPAGE/messages.dart';
+import 'screens/HOMEPAGE/notifications.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -77,6 +78,7 @@ class MyApp extends StatelessWidget {
         Seller_Payout_History.id: (context) => Seller_Payout_History(),
         Seller_Request_Payout.id: (context) => Seller_Request_Payout(),
         Messages.id: (context) => Messages(),
+        notifications.id: (context) => notifications(),
       },
     );
   }

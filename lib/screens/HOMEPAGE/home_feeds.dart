@@ -8,12 +8,16 @@ import 'package:viplive/screens/DASHBOARD/Admin_new_mambers.dart';
 import 'package:viplive/screens/HOMEPAGE/profile_screen.dart';
 import 'package:viplive/screens/HOMEPAGE/profile_screen_sp.dart';
 import 'package:viplive/services/auth.dart';
+import 'package:viplive/screens/HOMEPAGE/notifications.dart';
 
 import 'messages.dart';
 
 // ignore: camel_case_types
 class homeFeeds extends StatefulWidget {
   static String id = 'homeFeeds';
+
+
+
   @override
   _homeFeedsState createState() => _homeFeedsState();
 }
@@ -89,9 +93,9 @@ class _homeFeedsState extends State<homeFeeds> {
                 child: GestureDetector(
                   child: Container(
                     child: IconButton(
-                      icon: SvgPicture.asset('assets/notifications_icon.svg'),
+                        icon: SLS.test(),
                       onPressed: () {
-                        Navigator.pushReplacementNamed(context, Admin_new_mambers.id);
+                        Navigator.pushReplacementNamed(context, notifications.id);
                       },
                     ),
                   ),

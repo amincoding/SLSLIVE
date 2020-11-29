@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_screenutil/screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:viplive/screens/DASHBOARD/Admin_new_mambers.dart';
 import 'package:viplive/screens/HOMEPAGE/profile_screen.dart';
@@ -8,13 +7,14 @@ import 'package:viplive/screens/HOMEPAGE/profile_screen.dart';
 import '../../SLS.dart';
 import 'home_feeds.dart';
 
-class Messages extends StatefulWidget {
-  static String id ='messages';
+class notifications extends StatefulWidget {
+  static String id ="notifications";
+
   @override
-  _MessagesState createState() => _MessagesState();
+  _notificationsState createState() => _notificationsState();
 }
 
-class _MessagesState extends State<Messages> {
+class _notificationsState extends State<notifications> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -112,48 +112,48 @@ class _MessagesState extends State<Messages> {
       body: Stack(
         children: [
           Column(
-            children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    child:Text(
-                      'Messages',style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      child:Text(
+                        'Notifications',style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      ),
                     ),
+                  ],
+                ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      child:Text(
+                        'You Have ${SLS.notifications} new notifications',style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 12,
+                      ),
+                      ),
                     ),
-                  ),
-                ],
-              ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    child:Text(
-                      'You Have ${SLS.new_messages} new messages',style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontSize: 12,
-                    ),
-                    ),
-                  ),
-                ],
-              ),
-              Divider(),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                Container(
-                    height: ScreenUtil().setHeight(12),
-                    child: FlatButton(onPressed: () {}, child: Text('Clear All',style: TextStyle(fontSize: 10 , color: Colors.blue),)))
-              ],),
-              Divider(),
-              Row(),
-            ]
+                  ],
+                ),
+                Divider(),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Container(
+                        height: ScreenUtil().setHeight(12),
+                        child: FlatButton(onPressed: () {}, child: Text('Clear All',style: TextStyle(fontSize: 10 , color: Colors.blue),)))
+                  ],),
+                Divider(),
+                Row(),
+              ]
           )
         ],
       ),
