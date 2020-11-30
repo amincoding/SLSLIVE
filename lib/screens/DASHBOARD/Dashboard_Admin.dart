@@ -503,7 +503,7 @@ class _Dashboard_AdminState extends State<Dashboard_Admin> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: ScreenUtil().setWidth(170),
+                                  width: ScreenUtil().setWidth(155),
                                 ),
                                 SvgPicture.asset(
                                   'assets/go_in.svg',

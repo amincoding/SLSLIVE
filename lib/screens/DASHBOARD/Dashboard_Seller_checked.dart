@@ -405,7 +405,7 @@ class _Dashboard_Seller_checkedState extends State<Dashboard_Seller_checked> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: ScreenUtil().setWidth(170),
+                                  width: ScreenUtil().setWidth(155),
                                 ),
                                 SvgPicture.asset(
                                   'assets/go_in.svg',

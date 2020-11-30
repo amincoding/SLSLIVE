@@ -410,7 +410,7 @@ class _Dashboard_SellerState extends State<Dashboard_Seller> {
                                   ),
                                 ),
                                 SizedBox(
-                                  width: ScreenUtil().setWidth(170),
+                                  width: ScreenUtil().setWidth(155),
                                 ),
                                 SvgPicture.asset(
                                   'assets/go_in.svg',

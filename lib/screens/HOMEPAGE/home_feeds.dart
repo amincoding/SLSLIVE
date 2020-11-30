@@ -81,7 +81,7 @@ class _homeFeedsState extends State<homeFeeds> {
                       color: Colors.black,
                     ),
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, Messages.id);
+                      Navigator.pushNamed(context, Messages.id);
                     },
                   ),
                 ),
@@ -95,7 +95,7 @@ class _homeFeedsState extends State<homeFeeds> {
                     child: IconButton(
                         icon: SLS.test(),
                       onPressed: () {
-                        Navigator.pushReplacementNamed(context, notifications.id);
+                        Navigator.pushNamed(context, notifications.id);
                       },
                     ),
                   ),
@@ -113,9 +113,9 @@ class _homeFeedsState extends State<homeFeeds> {
                       onPressed: () {
                         var status = SLS.isAdming(SLS.Email);
                         if(SLS.isAdmin){
-                          Navigator.pushReplacementNamed(context, profile_screen_sp.id);
+                          Navigator.pushNamed(context, profile_screen_sp.id);
                         }else{
-                          Navigator.pushReplacementNamed(context, profile_screen.id);
+                          Navigator.pushNamed(context, profile_screen.id);
                         }
                       },
                     ),

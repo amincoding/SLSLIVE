@@ -1,12 +1,14 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:viplive/constants.dart';
 import 'package:viplive/models/product.dart';
 
 class store {
-  final FirebaseFirestore _firestore =FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
-  addProduct(Product product){
+  addProduct(Product product) {
     _firestore.collection(KProductCollection).add({
       KProductName: product.pName,
       KProductDescription: product.pDescription,
@@ -17,8 +19,8 @@ class store {
       KProductID: product.pID,
     });
   }
-  loadProduct(){
-    var snapshot = _firestore.collection(KProductCollection).getDocuments();
 
+  Stream <QuerySnapshot> loadProduct() {
+    return _firestore.collection(KProductCollection).snapshots();
   }
 }
