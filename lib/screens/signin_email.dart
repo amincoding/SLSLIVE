@@ -1,5 +1,3 @@
-
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -151,7 +149,7 @@ class _signin_emailState extends State<signin_email> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: TextFormField(
-                    validator: (val) => val.endsWith('com') || !val.contains('@') || !val.contains('.') ? 'not valide' : null ,
+                    validator: (val) => val.endsWith('com') || !val.contains('@') || !val.contains('.') ? 'not valide' : null,
                     onSaved: (val) {
                       setState(() {
                         SLS.Email = val;
@@ -245,7 +243,14 @@ class _signin_emailState extends State<signin_email> {
                             // ignore: unnecessary_brace_in_string_interps
                             print("signed in : ${userId}");
                             if (user != null) {
-                              Navigator.pushReplacementNamed(context, homeFeeds.id);
+                              if(SLS.Email.trim() == "aminebr70@gmail.com") {
+                                SLS.isAdmin = true;
+                                Navigator.pushNamed(context, homeFeeds.id);
+                              }
+                              else{
+                                SLS.isUser = true;
+                                Navigator.pushNamed(context, homeFeeds.id);
+                              }
                             } else {
                               print('already signed in');
                             }

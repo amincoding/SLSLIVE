@@ -15,6 +15,8 @@ class SLS extends StatefulWidget {
   static List<String> MembersList = [''];
   static int new_messages = 2;
   static int notifications = 0;
+  static bool isAdmin = false;
+  static bool isUser = false;
 
   static test(){
     if (SLS.notifications != 0){

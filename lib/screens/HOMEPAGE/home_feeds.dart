@@ -112,7 +112,7 @@ class _homeFeedsState extends State<homeFeeds> {
                           SvgPicture.asset('assets/profilePicHolder_icon.svg'),
                       onPressed: () {
                         var status = SLS.isAdming(SLS.Email);
-                        if(status == true){
+                        if(SLS.isAdmin){
                           Navigator.pushReplacementNamed(context, profile_screen_sp.id);
                         }else{
                           Navigator.pushReplacementNamed(context, profile_screen.id);

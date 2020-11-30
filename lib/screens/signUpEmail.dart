@@ -51,10 +51,7 @@ class _signUpEmailState extends State<signUpEmail> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          leading: new IconButton(
-            icon: SvgPicture.asset('assets/back_appBar.svg'),
-            onPressed: () => Navigator.of(context).pop(),
-          ),
+          automaticallyImplyLeading: false,
           actions: [
             GestureDetector(
               child: Padding(
