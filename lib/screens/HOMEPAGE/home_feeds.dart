@@ -131,7 +131,7 @@ class _homeFeedsState extends State<homeFeeds> {
 }
 
 class DataSearch extends SearchDelegate<String> {
-  final productes = ['amin', 'khail', 'aladin', 'youccef'];
+  final productes = ['amin', 'khail', 'aladin', 'youccef','mama'];
   final reacentSearch = [];
   @override
   List<Widget> buildActions(BuildContext context) {
