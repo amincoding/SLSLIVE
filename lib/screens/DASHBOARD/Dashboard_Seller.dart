@@ -389,8 +389,8 @@ class _Dashboard_SellerState extends State<Dashboard_Seller> {
                           width: ScreenUtil().setWidth(345),
                           height: ScreenUtil().setHeight(55),
                           color: Color(0xFFFF0202),
-                          child: GestureDetector(
-                            onTap: () {},
+                          child: FlatButton(
+                            onPressed: () {},
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.center,

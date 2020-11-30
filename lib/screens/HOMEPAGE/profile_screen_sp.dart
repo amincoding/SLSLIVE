@@ -5,6 +5,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:viplive/main.dart';
+import 'package:viplive/screens/DASHBOARD/Dashboard_Admin.dart';
+import 'package:viplive/screens/DASHBOARD/Dashboard_Admin_checked.dart';
 import 'package:viplive/screens/DASHBOARD/Dashboard_Seller.dart';
 import 'package:viplive/screens/DASHBOARD/Dashboard_Seller_checked.dart';
 import 'package:viplive/screens/HOMEPAGE/My_orders.dart';
@@ -26,7 +28,6 @@ class profile_screen_sp extends StatefulWidget {
 
 // ignore: camel_case_types
 class _profile_screen_spState extends State<profile_screen_sp> {
-  String name = 'omar';
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +75,7 @@ class _profile_screen_spState extends State<profile_screen_sp> {
                   text: TextSpan(
                     children: <TextSpan>[
                       TextSpan(
-                        text: name,
+                        text: SLS.username,
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.normal,
@@ -325,13 +326,25 @@ class _profile_screen_spState extends State<profile_screen_sp> {
                             ),
                           ),
                           onPressed: () {
-                            if (SLS.Revenue < 100) {
-                              Navigator.pushNamed(context, Dashboard_Seller.id);
-                            }
-                            if (SLS.Revenue >= 100) {
-                              Navigator.pushNamed(
-                                  context, Dashboard_Seller_checked.id);
-                            }
+                            setState(() {
+                              if (SLS.Revenue < 100) {
+                                if(SLS.isAdmin) {
+                                  Navigator.pushNamed(
+                                      context, Dashboard_Admin.id);
+                                }else{
+                                  Navigator.pushNamed(
+                                      context, Dashboard_Seller.id);
+                                }
+                            }else{
+                                if(SLS.isAdmin) {
+                                  Navigator.pushNamed(
+                                      context, Dashboard_Admin_checked.id);
+                                }else{
+                                  Navigator.pushNamed(
+                                      context, Dashboard_Seller_checked.id);
+                                }
+                              }
+                            });
                           }),
                     ),
                   ),

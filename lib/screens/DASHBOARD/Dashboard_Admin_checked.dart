@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:viplive/screens/HOMEPAGE/home_feeds.dart';
+import 'package:viplive/screens/Productes/addProduct.dart';
 
 import '../../SLS.dart';
 import '../../constants.dart';
@@ -474,34 +475,38 @@ class _Dashboard_Admin_checkedState extends State<Dashboard_Admin_checked> {
                           width: ScreenUtil().setWidth(345),
                           height: ScreenUtil().setHeight(55),
                           color: Color(0xFFFF0202),
-                          child: GestureDetector(
-                            onTap: () {},
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                SizedBox(
-                                  width: ScreenUtil().setWidth(20),
-                                ),
-                                SvgPicture.asset('assets/suggest.svg'),
-                                SizedBox(
-                                  width: ScreenUtil().setWidth(30),
-                                ),
-                                Text(
-                                  'GO LIVE',
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    color: Colors.white,
+                          child: FlatButton(
+                            onPressed: () {
+                              Navigator.pushNamed(context, AddProduct.id);
+                            },
+                            child: Container(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  SizedBox(
+                                    width: ScreenUtil().setWidth(20),
                                   ),
-                                ),
-                                SizedBox(
-                                  width: ScreenUtil().setWidth(170),
-                                ),
-                                SvgPicture.asset(
-                                  'assets/go_in.svg',
-                                  color: Colors.white,
-                                )
-                              ],
+                                  SvgPicture.asset('assets/suggest.svg'),
+                                  SizedBox(
+                                    width: ScreenUtil().setWidth(30),
+                                  ),
+                                  Text(
+                                    'GO LIVE',
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: ScreenUtil().setWidth(155),
+                                  ),
+                                  SvgPicture.asset(
+                                    'assets/go_in.svg',
+                                    color: Colors.white,
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ),

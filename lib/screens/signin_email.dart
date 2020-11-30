@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 import 'package:viplive/SLS.dart';
-import 'package:viplive/models/user.dart';
+import 'package:viplive/models/product.dart';
+import 'package:viplive/screens/DASHBOARD/Dashboard_Admin_checked.dart';
 import 'package:viplive/screens/HOMEPAGE/home_feeds.dart';
 import 'package:viplive/screens/Start.dart';
 import 'package:viplive/screens/signUpEmail.dart';
@@ -231,39 +232,34 @@ class _signin_emailState extends State<signin_email> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8)),
                   onPressed: () async {
-                      if (_checked == true) {
-                        if (validateAndSave()) {
-                          try {
-                            //setState(() => loading = true);
-                            String userId = await widget.auth
-                                .signInWithEmailAndPassword(SLS.Email.trim(), SLS.password);
-                            UserCredential user = await FirebaseAuth.instance
-                                .signInWithEmailAndPassword(
-                                email: SLS.Email.trim(), password: SLS.password);
-                            // ignore: unnecessary_brace_in_string_interps
-                            print("signed in : ${userId}");
-                            if (user != null) {
-                              if(SLS.Email.trim() == "aminebr70@gmail.com") {
-                                SLS.isAdmin = true;
-                                Navigator.pushNamed(context, homeFeeds.id);
-                              }
-                              else{
-                                SLS.isUser = true;
-                                Navigator.pushNamed(context, homeFeeds.id);
-                              }
-                            } else {
-                              print('already signed in');
+                    if (_checked == true) {
+                      if (validateAndSave()) {
+                        try {
+                          String userId = await widget.auth.signInWithEmailAndPassword(SLS.Email.trim(), SLS.password);
+                          UserCredential user = await FirebaseAuth.instance.signInWithEmailAndPassword(email: SLS.Email.trim(), password: SLS.password);
+                          print("signed in : ${userId}");
+                          if (user != null) {
+                            if(SLS.Email.trim() == "aminebr70@gmail.com" && SLS.password == "Aminebr70") {
+                              SLS.isAdmin = true;
+                              print("admin");
+                              Navigator.pushNamed(context, homeFeeds.id);
+                            }else{
+                              SLS.isUser = true;
+                              print("user");
+                              Navigator.pushNamed(context, homeFeeds.id);
                             }
-                          } catch (e) {
-                            //setState(() => loading = false);
-                            Scaffold.of(context).showSnackBar(SnackBar(
-                                content:Text(
-                                  e.message,
-                                )
-                            ));
+                          }else {
+                            print('already signed in');
                           }
+                        } catch (e) {
+                          Scaffold.of(context).showSnackBar(SnackBar(
+                            content:Text(
+                              e.message
+                            )
+                          ));
                         }
-                      } else {
+                      }
+                    }else {
                         _checked = true;
                       }
                     },

@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:viplive/screens/HOMEPAGE/home_feeds.dart';
+import 'package:viplive/screens/Productes/addProduct.dart';
 
 import '../../SLS.dart';
 import '../../constants.dart';
@@ -479,8 +480,10 @@ class _Dashboard_AdminState extends State<Dashboard_Admin> {
                           width: ScreenUtil().setWidth(345),
                           height: ScreenUtil().setHeight(55),
                           color: Color(0xFFFF0202),
-                          child: GestureDetector(
-                            onTap: () {},
+                          child: FlatButton(
+                            onPressed: () {
+                              Navigator.pushNamed(context, AddProduct.id);
+                            },
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.center,

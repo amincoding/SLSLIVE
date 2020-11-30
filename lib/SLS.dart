@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class SLS extends StatefulWidget {
+  static String font = "Montserrat";
   static String fullname;
   static String username;
   static String Email;
   static String password;
-  static int PhoneNumber;
+  static String PhoneNumber = "";
   static int Orders = 0;
-  static int Revenue = 0;
+  static int Revenue = 80;
   static int Followers = 0;
   static int NewMembers = 0;
   static List<String> MembersList = [''];

@@ -7,7 +7,7 @@ import 'package:viplive/screens/signin_email.dart';
 import 'package:viplive/screens/waiting_screen.dart';
 import 'package:viplive/services/auth.dart';
 import 'package:viplive/screens/Start.dart';
-import 'package:viplive/models/user.dart';
+import 'package:viplive/models/product.dart';
 
 class RootPage extends StatefulWidget {
   RootPage({this.auth});
