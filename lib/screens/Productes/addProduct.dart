@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:viplive/models/product.dart';
@@ -15,7 +17,8 @@ class AddProduct extends StatefulWidget {
 }
 
 class _AddProductState extends State<AddProduct> {
-  String _Name , _Price , _Description , _Category , _Location;
+  String _Name , _Price , _Description , _Category , _Location , _Quantity;
+  Random _ID = new Random(100000);
 
   final GlobalKey<FormState> _globalKey = GlobalKey<FormState>();
 
@@ -145,6 +148,29 @@ class _AddProductState extends State<AddProduct> {
                               ))),
                     ),
                   ),
+                  Container(
+                    width: ScreenUtil().setWidth(400),
+                    height: ScreenUtil().setHeight(100),
+                    child: TextFormField(
+                      onSaved: (val){
+                        setState(() {
+                          _Quantity = val;
+                        });
+                      },
+                      decoration: InputDecoration(
+                          hintText: 'Product quantity',
+                          focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                              borderSide: BorderSide(
+                                color: Colors.blue,
+                              )),
+                          enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                              borderSide: BorderSide(
+                                color: Colors.pink,
+                              ))),
+                    ),
+                  ),
                   SizedBox(
                     height: ScreenUtil().setHeight(5),
                   ),
@@ -168,6 +194,9 @@ class _AddProductState extends State<AddProduct> {
                             pDescription: _Description,
                             pLocation: _Location,
                             pCategory: _Category,
+                            pQuantity: _Quantity,
+                            pID: _ID,
+
                           ));
                         }
                       },

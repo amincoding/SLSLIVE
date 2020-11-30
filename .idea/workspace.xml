@@ -2,32 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecd5515c-46ce-42b0-bbcf-7857cb2fd926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/apple.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/Productes/addProduct.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/services/store.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/customRaisedButton.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/customTextFeild.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/Productes/editProduct.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/SLS.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SLS.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/product.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/DASHBOARD/Dashboard_Admin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/DASHBOARD/Dashboard_Admin.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/DASHBOARD/Dashboard_Admin_checked.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/DASHBOARD/Dashboard_Admin_checked.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/DASHBOARD/Dashboard_Seller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/DASHBOARD/Dashboard_Seller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/DASHBOARD/Dashboard_Seller_checked.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/DASHBOARD/Dashboard_Seller_checked.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/HOMEPAGE/profile_screen_sp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/HOMEPAGE/profile_screen_sp.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/Start.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/Start.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/signin_email.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/signin_email.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/RootPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/RootPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/auth.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/product.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/product.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/Productes/addProduct.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/Productes/addProduct.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/store.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/store.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="42008723f0641413" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="pixel_API_30" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -170,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606746602401</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="second">
+      <created>1606764336291</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606764336291</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -191,10 +186,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1366.738@0.30.1366.738" timestamp="1606700663049" />
-    <state x="337" y="30" key="CommitChangelistDialog2" timestamp="1606746601091">
+    <state x="337" y="30" key="CommitChangelistDialog2" timestamp="1606764334457">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="337" y="30" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1606746601091" />
+    <state x="337" y="30" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1606764334457" />
     <state width="493" height="452" key="DebuggerActiveHint" timestamp="1606751784319">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -227,10 +222,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="184" y="41" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1606577248267" />
-    <state x="275" y="131" key="Vcs.Push.Dialog.v2" timestamp="1606746609250">
+    <state x="275" y="131" key="Vcs.Push.Dialog.v2" timestamp="1606764343815">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="275" y="131" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1606746609250" />
+    <state x="275" y="131" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1606764343815" />
     <state x="82" y="150" width="1182" height="554" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1606589001718">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

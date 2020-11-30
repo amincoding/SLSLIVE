@@ -13,6 +13,12 @@ class store {
       KProductLocation: product.pLocation,
       KProductPrice: product.pPrice,
       KProductCategory: product.pCategory,
+      KProductQuantity: product.pQuantity,
+      KProductID: product.pID,
     });
+  }
+  loadProduct(){
+    var snapshot = _firestore.collection(KProductCollection).getDocuments();
+
   }
 }

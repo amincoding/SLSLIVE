@@ -10,3 +10,5 @@ const KProductPrice='ProductPrice';
 const KProductDescription='ProductDescription';
 const KProductLocation='ProductLocation';
 const KProductCategory='ProductCategory';
+const KProductQuantity='ProductQuantity';
+const KProductID='ProductID';

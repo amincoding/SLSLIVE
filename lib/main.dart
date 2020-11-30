@@ -38,6 +38,7 @@ import 'screens/DASHBOARD/Dashboard_Admin_checked.dart';
 import 'screens/HOMEPAGE/messages.dart';
 import 'screens/HOMEPAGE/notifications.dart';
 import 'screens/Productes/addProduct.dart';
+import 'screens/Productes/editProduct.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -82,6 +83,7 @@ class MyApp extends StatelessWidget {
           Messages.id: (context) => Messages(),
           notifications.id: (context) => notifications(),
           AddProduct.id: (context) => AddProduct(),
+          editProduct.id: (context) => editProduct(),
         },
     );
   }
