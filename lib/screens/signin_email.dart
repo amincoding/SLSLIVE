@@ -15,7 +15,6 @@ import 'package:viplive/services/auth.dart';
 import 'package:viplive/widgets/passWord_forget.dart';
 import '../constants.dart';
 import 'package:email_validator/email_validator.dart';
-import 'Loading.dart';
 
 
 // ignore: camel_case_types
@@ -65,35 +64,12 @@ class _signin_emailState extends State<signin_email> {
     }
   }
 
-  void validateAndSubmit() async {
-    if (validateAndSave()) {
-      setState(() => loading = true);
-      try {
-        String userId = await widget.auth
-            .signInWithEmailAndPassword(SLS.Email.trim(), SLS.password);
-        UserCredential user = await FirebaseAuth.instance
-            .signInWithEmailAndPassword(
-                email: SLS.Email.trim(), password: SLS.password);
-        // ignore: unnecessary_brace_in_string_interps
-        print("signed in : ${userId}");
-        if (user != null) {
-          Navigator.pushReplacementNamed(context, homeFeeds.id);
-        } else {
-          print('already signed in');
-        }
-      } catch (e) {
-        print(e.toString());
-        setState(() => loading = false);
-      }
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
 
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
-    return loading ? Loading() : Scaffold(
+    return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,
@@ -252,24 +228,49 @@ class _signin_emailState extends State<signin_email> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25),
-            child: RaisedButton(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8)),
-                onPressed: () {
-                    if (_checked == true) {
-                      validateAndSubmit();
-                    } else {
-                      _checked = true;
-                    }
-                  },
-                color: KTextFeildSingUpColor,
-                child: Text('Log In',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: KBackGroundColor,
-                    ))),
+            child: Builder(
+              builder: (context) => RaisedButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8)),
+                  onPressed: () async {
+                      if (_checked == true) {
+                        if (validateAndSave()) {
+                          try {
+                            //setState(() => loading = true);
+                            String userId = await widget.auth
+                                .signInWithEmailAndPassword(SLS.Email.trim(), SLS.password);
+                            UserCredential user = await FirebaseAuth.instance
+                                .signInWithEmailAndPassword(
+                                email: SLS.Email.trim(), password: SLS.password);
+                            // ignore: unnecessary_brace_in_string_interps
+                            print("signed in : ${userId}");
+                            if (user != null) {
+                              Navigator.pushReplacementNamed(context, homeFeeds.id);
+                            } else {
+                              print('already signed in');
+                            }
+                          } catch (e) {
+                            //setState(() => loading = false);
+                            Scaffold.of(context).showSnackBar(SnackBar(
+                                content:Text(
+                                  e.message,
+                                )
+                            ));
+                          }
+                        }
+                      } else {
+                        _checked = true;
+                      }
+                    },
+                  color: KTextFeildSingUpColor,
+                  child: Text('Log In',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: KBackGroundColor,
+                      ))),
+            ),
           ),
         ],
       ),
