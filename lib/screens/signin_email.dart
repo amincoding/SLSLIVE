@@ -150,7 +150,7 @@ class _signin_emailState extends State<signin_email> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: TextFormField(
-                    validator: (val) => val.endsWith('com') || !val.contains('@') || !val.contains('.') ? 'not valide' : null,
+                    validator: (val) => val.endsWith('.com') || !val.contains('.') ? 'not valid' : null,
                     onSaved: (val) {
                       setState(() {
                         SLS.Email = val;
@@ -237,9 +237,9 @@ class _signin_emailState extends State<signin_email> {
                         try {
                           String userId = await widget.auth.signInWithEmailAndPassword(SLS.Email.trim(), SLS.password);
                           UserCredential user = await FirebaseAuth.instance.signInWithEmailAndPassword(email: SLS.Email.trim(), password: SLS.password);
-                          print("signed in : ${userId}");
+                          print("signed in : $userId");
                           if (user != null) {
-                            if(SLS.Email.trim() == "aminebr70@gmail.com" && SLS.password == "Aminebr70") {
+                            if(SLS.Email.trim() == "omaraouikd@gmail.com" && SLS.password == "Admin2021.ma") {
                               SLS.isAdmin = true;
                               print("admin");
                               Navigator.pushNamed(context, homeFeeds.id);

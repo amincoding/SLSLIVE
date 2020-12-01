@@ -74,7 +74,7 @@ class _Admin_new_mambersState extends State<Admin_new_mambers> {
           for (var Member in SLS.MembersList)
             New_Members_Custom(
               fullname: Member,
-              profile_pic: "assets/images/algeria.png",
+              profile_pic: "images/algeria.png",
             ),
         ])));
   }

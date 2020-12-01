@@ -23,4 +23,11 @@ class store {
   Stream <QuerySnapshot> loadProduct() {
     return _firestore.collection(KProductCollection).snapshots();
   }
-}
+  deleteProduct(documentId){
+    _firestore.collection(KProductCollection).doc(documentId).delete();
+  }
+
+  editProduct(data , documentId){
+      _firestore.collection(KProductCollection).doc(documentId).update(data);
+    }
+  }

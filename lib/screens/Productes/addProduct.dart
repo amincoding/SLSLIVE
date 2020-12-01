@@ -6,7 +6,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:viplive/models/product.dart';
 import 'package:viplive/screens/HOMEPAGE/home_feeds.dart';
 import 'package:viplive/screens/HOMEPAGE/messages.dart';
-import 'package:viplive/screens/Productes/editProduct.dart';
+import 'package:viplive/screens/Productes/manageProduct.dart';
 import 'package:viplive/widgets/customRaisedButton.dart';
 import 'package:viplive/widgets/customTextFeild.dart';
 import 'package:viplive/services/store.dart';
@@ -324,7 +324,7 @@ class _AddProductState extends State<AddProduct> {
                           ),
                           ),
                           onPressed: (){
-                            Navigator.pushNamed(context, editProduct.id);
+                            Navigator.pushNamed(context, manageProduct.id);
                           },
                         ),
                       ),
