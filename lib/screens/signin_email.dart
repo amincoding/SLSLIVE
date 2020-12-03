@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 import 'package:viplive/SLS.dart';
-import 'package:viplive/models/product.dart';
+import 'package:viplive/models/postes.dart';
 import 'package:viplive/screens/DASHBOARD/Dashboard_Admin_checked.dart';
 import 'package:viplive/screens/HOMEPAGE/home_feeds.dart';
 import 'package:viplive/screens/Start.dart';
@@ -150,7 +150,6 @@ class _signin_emailState extends State<signin_email> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: TextFormField(
-                    validator: (val) => val.endsWith('.com') || !val.contains('.') ? 'not valid' : null,
                     onSaved: (val) {
                       setState(() {
                         SLS.Email = val;

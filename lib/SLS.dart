@@ -5,7 +5,7 @@ import 'package:flutter_svg/svg.dart';
 class SLS extends StatefulWidget {
   static String font = "Montserrat";
   static String fullname;
-  static String username;
+  static String username = "Omar";
   static String Email;
   static String password;
   static String PhoneNumber = "";

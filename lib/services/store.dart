@@ -3,31 +3,30 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:viplive/constants.dart';
-import 'package:viplive/models/product.dart';
+import 'package:viplive/models/postes.dart';
 
 class store {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
-  addProduct(Product product) {
+  addPost(Postes postes) {
     _firestore.collection(KProductCollection).add({
-      KProductName: product.pName,
-      KProductDescription: product.pDescription,
-      KProductLocation: product.pLocation,
-      KProductPrice: product.pPrice,
-      KProductCategory: product.pCategory,
-      KProductQuantity: product.pQuantity,
-      KProductID: product.pID,
+      KProductName: postes.pName,
+      KProductDescription: postes.pDescription,
+      KProductLocation: postes.pLocation,
+      KProductPrice: postes.pPrice,
+      KProductCategory: postes.pCategory,
+      KProductQuantity: postes.pQuantity,
     });
   }
 
-  Stream <QuerySnapshot> loadProduct() {
+  Stream <QuerySnapshot> loadPost() {
     return _firestore.collection(KProductCollection).snapshots();
   }
-  deleteProduct(documentId){
+  deletePost(documentId){
     _firestore.collection(KProductCollection).doc(documentId).delete();
   }
 
-  editProduct(data , documentId){
+  editPost(data , documentId){
       _firestore.collection(KProductCollection).doc(documentId).update(data);
     }
   }

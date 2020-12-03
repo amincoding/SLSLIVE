@@ -477,7 +477,7 @@ class _Dashboard_Admin_checkedState extends State<Dashboard_Admin_checked> {
                           color: Color(0xFFFF0202),
                           child: FlatButton(
                             onPressed: () {
-                              Navigator.pushNamed(context, AddProduct.id);
+
                             },
                             child: Container(
                               child: Row(

@@ -3,8 +3,14 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:viplive/models/product.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:viplive/SLS.dart';
+import 'package:viplive/models/postes.dart';
+import 'package:viplive/screens/HOMEPAGE/home_feeds.dart';
+import 'package:viplive/screens/HOMEPAGE/messages.dart';
+import 'package:viplive/screens/HOMEPAGE/notifications.dart';
 import 'package:viplive/screens/HOMEPAGE/profile_screen.dart';
+import 'package:viplive/screens/HOMEPAGE/profile_screen_sp.dart';
 import 'package:viplive/screens/Productes/editProduct.dart';
 import 'package:viplive/services/store.dart';
 import 'package:viplive/constants.dart';
@@ -21,17 +27,114 @@ class _manageProductState extends State<manageProduct> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.grey[200],
+          elevation: 0.0,
+          leading: new IconButton(
+            icon: SvgPicture.asset(
+              'assets/back_appBar.svg',
+              color: Colors.grey[400],
+            ),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+          actions: [
+            Stack(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(
+                      right: ScreenUtil().setWidth(245),
+                      top: ScreenUtil().setHeight(2)),
+                  child: GestureDetector(
+                    child: IconButton(
+                      icon: SvgPicture.asset('assets/home_icon.svg'),
+                      onPressed: () {
+                        Navigator.pushReplacementNamed(context, homeFeeds.id);
+                      },
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                      left: ScreenUtil().setWidth(50),
+                      top: ScreenUtil().setHeight(2)),
+                  child: GestureDetector(
+                    child: IconButton(
+                      icon: SvgPicture.asset(
+                        'assets/search_icon.svg',
+                        color: Colors.black,
+                      ),
+                      onPressed: () {
+                        showSearch(context: context, delegate: DataSearch());
+                      },
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                      left: ScreenUtil().setWidth(160),
+                      top: ScreenUtil().setHeight(2)),
+                  child: GestureDetector(
+                    child: IconButton(
+                      icon: SvgPicture.asset(
+                        'assets/messages_icon.svg',
+                        color: Colors.black,
+                      ),
+                      onPressed: () {
+                        Navigator.pushNamed(context, Messages.id);
+                      },
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                      left: ScreenUtil().setWidth(210),
+                      top: ScreenUtil().setHeight(2)),
+                  child: GestureDetector(
+                    child: Container(
+                      child: IconButton(
+                        icon: SLS.test(),
+                        onPressed: () {
+                          Navigator.pushNamed(context, notifications.id);
+                        },
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                      left: ScreenUtil().setWidth(260),
+                      top: ScreenUtil().setHeight(2)),
+                  child: GestureDetector(
+                    child: Container(
+                      child: IconButton(
+                        icon:
+                        SvgPicture.asset('assets/profilePicHolder_icon.svg'),
+                        onPressed: () {
+                          var status = SLS.isAdming(SLS.Email);
+                          if(SLS.isAdmin){
+                            Navigator.pushNamed(context, profile_screen_sp.id);
+                          }else{
+                            Navigator.pushNamed(context, profile_screen.id);
+                          }
+                        },
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       body: StreamBuilder<QuerySnapshot>(
-        stream: _store.loadProduct(),
+        stream: _store.loadPost(),
         builder: (context , snapshot) {
           if(snapshot.hasData) {
-            List<Product> products = [];
+            List<Postes> products = [];
             for (var doc in snapshot.data.docs) {
               var data = doc.data();
-              products.add(Product(
+              products.add(Postes(
                 pName: data[KProductName],
                 pPrice: data[KProductPrice],
-                pID: doc.id,
                 pQuantity: data[KProductQuantity],
                 pCategory: data[KProductCategory],
                 pLocation: data[KProductLocation],
@@ -57,13 +160,13 @@ class _manageProductState extends State<manageProduct> {
                         items: [
                          MyPopUpMenuItem(
                            onClick: (){
-                             Navigator.pushNamed(context, editProduct.id,arguments: products[index]);
+                             Navigator.pushReplacementNamed(context, editProduct.id,arguments: products[index]);
                            },
                            child: Text("Edit"),
                          ),
                           MyPopUpMenuItem(
                             onClick: (){
-                              _store.deleteProduct(products[index].pID);
+                              _store.deletePost(products[index]);
                               Navigator.pop(context);
                             },
                            child: Text("Delete"),

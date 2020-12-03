@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:viplive/models/product.dart';
+import 'package:viplive/models/postes.dart';
 import 'package:viplive/screens/HOMEPAGE/home_feeds.dart';
 import 'package:viplive/screens/HOMEPAGE/messages.dart';
 import 'package:viplive/screens/Productes/manageProduct.dart';
@@ -32,7 +32,7 @@ class _editProductState extends State<editProduct> {
 
   @override
   Widget build(BuildContext context) {
-    Product product =  ModalRoute.of(context).settings.arguments;
+    Postes product =  ModalRoute.of(context).settings.arguments;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey[200],
@@ -296,7 +296,7 @@ class _editProductState extends State<editProduct> {
                         onPressed: (){
                           if(_globalKey.currentState.validate()){
                             _globalKey.currentState.save();
-                            _store.editProduct(({
+                            _store.editPost(({
                              KProductName: _Name,
                              KProductPrice: _Price,
                              KProductDescription: _Description,
@@ -304,9 +304,10 @@ class _editProductState extends State<editProduct> {
                              KProductLocation: _Location,
                              KProductQuantity: _Quantity
 
-                            }),product.pID);
+                            }),product);
 
                           }
+                          Navigator.pushReplacementNamed(context, manageProduct.id);
                         },
                       ),
                     ),

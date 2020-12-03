@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:viplive/models/product.dart';
+import 'package:viplive/models/postes.dart';
 import 'package:viplive/services/auth.dart';
 import '../constants.dart';
 import '../screens/Signup.dart';

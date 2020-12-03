@@ -482,7 +482,7 @@ class _Dashboard_AdminState extends State<Dashboard_Admin> {
                           color: Color(0xFFFF0202),
                           child: FlatButton(
                             onPressed: () {
-                              Navigator.pushNamed(context, AddProduct.id);
+
                             },
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.start,

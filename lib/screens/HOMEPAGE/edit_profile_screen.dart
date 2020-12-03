@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +8,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:viplive/main.dart';
 import 'package:viplive/screens/HOMEPAGE/home_feeds.dart';
 import 'package:viplive/screens/HOMEPAGE/profile_screen.dart';
+import 'package:viplive/services/store.dart';
 
 import '../../SLS.dart';
 import '../../constants.dart';
@@ -285,7 +287,7 @@ class _edit_profile_screenState extends State<edit_profile_screen> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8)),
                   onPressed: () {
-                    Navigator.pushNamed(context, profile_screen.id);
+
                   },
                   color: KTextFeildSingUpColor,
                   child: Text('SAVE',

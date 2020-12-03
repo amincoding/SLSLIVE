@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:viplive/models/product.dart';
+import 'package:viplive/models/postes.dart';
 import 'dart:async';
+import 'package:viplive/services/auth.dart';
 
 
 
@@ -23,7 +24,7 @@ Future<String> creatUserWithEmailAndPassword(String _email , String _password) a
   }
 
   Future<String> currentUser() async {
-    UserCredential user = (await FirebaseAuth.instance.currentUser) as UserCredential;
+    final UserCredential user = FirebaseAuth.instance.currentUser as UserCredential;
     return user.user.uid;
   }
 

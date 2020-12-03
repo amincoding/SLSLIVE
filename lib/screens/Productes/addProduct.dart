@@ -3,7 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:viplive/models/product.dart';
+import 'package:viplive/constants.dart';
+import 'package:viplive/models/postes.dart';
 import 'package:viplive/screens/HOMEPAGE/home_feeds.dart';
 import 'package:viplive/screens/HOMEPAGE/messages.dart';
 import 'package:viplive/screens/Productes/manageProduct.dart';
@@ -134,56 +135,44 @@ class _AddProductState extends State<AddProduct> {
       ),
       body: Form(
         key: _globalKey,
-        child: Center(
           child: SingleChildScrollView(
             child: Column(
                 children: <Widget>[
-                    Container(
-                      width: ScreenUtil().setWidth(400),
-                      height: ScreenUtil().setHeight(100),
-                      child: TextFormField(
-                        onSaved: (val){
-                          setState(() {
-                            _Name = val;
-                          });
-                        },
-                        decoration: InputDecoration(
-                            hintText: 'Product Name',
-                            focusedBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                borderSide: BorderSide(
-                                  color: Colors.blue,
-                                )),
-                            enabledBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                borderSide: BorderSide(
-                                  color: Colors.pink,
-                                ))),
+                    Padding(
+                      padding: EdgeInsets.only(top: ScreenUtil().setHeight(10)),
+                      child: Container(
+                        width: ScreenUtil().setWidth(400),
+                        height: ScreenUtil().setHeight(100),
+                        child: Padding(
+                          padding: EdgeInsets.only(top: ScreenUtil().setHeight(10)),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.only(left: ScreenUtil().setHeight(120)),
+                                child: Text(
+                                  'Write A Post',style: TextStyle(
+                                  fontFamily: KFont,
+                                  color: Colors.black,
+                                  fontSize: 18,
+                                ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: ScreenUtil().setWidth(40),
+                              ),
+                              GestureDetector(
+                                  child: IconButton(
+                                    icon: SvgPicture.asset("assets/x_close_screen.svg",
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                  onTap: (){},
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                     ),
-                  Container(
-                    width: ScreenUtil().setWidth(400),
-                    height: ScreenUtil().setHeight(100),
-                    child: TextFormField(
-                      onSaved: (val){
-                        setState(() {
-                          _Price = val;
-                        });
-                      },
-                      decoration: InputDecoration(
-                          hintText: 'Product Price',
-                          focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: BorderSide(
-                                color: Colors.blue,
-                              )),
-                          enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: BorderSide(
-                                color: Colors.pink,
-                              ))),
-                    ),
-                  ),
                   Container(
                     width: ScreenUtil().setWidth(400),
                     height: ScreenUtil().setHeight(100),
@@ -296,14 +285,13 @@ class _AddProductState extends State<AddProduct> {
                             onPressed: (){
                               if(_globalKey.currentState.validate()){
                                 _globalKey.currentState.save();
-                                _store.addProduct(Product(
+                                _store.addPost(Postes(
                                   pName: _Name,
                                   pPrice: _Price,
                                   pDescription: _Description,
                                   pLocation: _Location,
                                   pCategory: _Category,
                                   pQuantity: _Quantity,
-                                  pID: _ID.nextInt(100000),
 
                                 ));
 
@@ -334,7 +322,6 @@ class _AddProductState extends State<AddProduct> {
             ),
           ),
         ),
-      ),
     );
   }
 }

@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:viplive/models/product.dart';
+import 'package:viplive/models/postes.dart';
 import 'package:viplive/screens/Provider/modelHUD.dart';
 import 'package:viplive/services/auth.dart';
 import 'package:viplive/services/RootPage.dart';
