@@ -10,12 +10,9 @@ import 'package:viplive/screens/DASHBOARD/Admin_new_mambers.dart';
 import 'package:viplive/screens/HOMEPAGE/profile_screen.dart';
 import 'package:viplive/screens/HOMEPAGE/profile_screen_sp.dart';
 import 'package:viplive/screens/Productes/addProduct.dart';
-import 'package:viplive/screens/Productes/editProduct.dart';
-import 'package:viplive/screens/Productes/manageProduct.dart';
 import 'package:viplive/services/auth.dart';
 import 'package:viplive/screens/HOMEPAGE/notifications.dart';
 import 'package:viplive/services/store.dart';
-import 'package:viplive/widgets/TabViewCustom.dart';
 
 import 'messages.dart';
 
@@ -105,9 +102,9 @@ class _homeFeedsState extends State<homeFeeds> {
                     child: Container(
                       child: IconButton(
                         icon: SLS.test(),
-                        onPressed: () {
-                          Navigator.pushNamed(context, notifications.id);
-                        },
+                         onPressed: () {
+                           Navigator.pushNamed(context, notifications.id);
+                         },
                       ),
                     ),
                   ),
@@ -177,7 +174,7 @@ class _homeFeedsState extends State<homeFeeds> {
                 padding: EdgeInsets.only(top: ScreenUtil().setHeight(250)),
                 child: Row(
                   children: [
-                    TabView(),
+
                   ],
                 ),
               ),

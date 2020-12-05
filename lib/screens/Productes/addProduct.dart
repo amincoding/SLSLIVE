@@ -7,7 +7,6 @@ import 'package:viplive/constants.dart';
 import 'package:viplive/models/postes.dart';
 import 'package:viplive/screens/HOMEPAGE/home_feeds.dart';
 import 'package:viplive/screens/HOMEPAGE/messages.dart';
-import 'package:viplive/screens/Productes/manageProduct.dart';
 import 'package:viplive/widgets/customRaisedButton.dart';
 import 'package:viplive/widgets/customTextFeild.dart';
 import 'package:viplive/services/store.dart';
@@ -25,8 +24,7 @@ class AddProduct extends StatefulWidget {
 }
 
 class _AddProductState extends State<AddProduct> {
-  String _Name , _Price , _Description , _Category , _Location , _Quantity;
-  Random _ID = new Random(100000);
+  String  _PostText , _Location ;
 
   final GlobalKey<FormState> _globalKey = GlobalKey<FormState>();
 
@@ -166,24 +164,31 @@ class _AddProductState extends State<AddProduct> {
                                       color: Colors.black,
                                     ),
                                   ),
-                                  onTap: (){},
+                                  onTap: (){
+                                    Navigator.pop(context);
+                                  },
                               )
                             ],
                           ),
                         ),
                       ),
                     ),
-                  Container(
-                    width: ScreenUtil().setWidth(400),
-                    height: ScreenUtil().setHeight(100),
+                  Padding(
+                    padding: EdgeInsets.only(
+                        top: ScreenUtil().setHeight(100),
+                        bottom: ScreenUtil().setHeight(0),
+                        left: ScreenUtil().setWidth(5),
+                        right: ScreenUtil().setWidth(5)),
                     child: TextFormField(
+                      keyboardType: TextInputType.multiline,
+                      maxLines: 9,
                       onSaved: (val){
                         setState(() {
-                          _Description = val;
+                          _PostText = val;
                         });
                       },
                       decoration: InputDecoration(
-                          hintText: 'Product Description',
+                          hintText: 'write your post',
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                               borderSide: BorderSide(
@@ -194,79 +199,10 @@ class _AddProductState extends State<AddProduct> {
                               borderSide: BorderSide(
                                 color: Colors.pink,
                               ))),
+                      ),
                     ),
-                  ),
-                  Container(
-                    width: ScreenUtil().setWidth(400),
-                    height: ScreenUtil().setHeight(100),
-                    child: TextFormField(
-                      onSaved: (val){
-                        setState(() {
-                          _Category = val;
-                        });
-                      },
-                      decoration: InputDecoration(
-                          hintText: 'Product Category',
-                          focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: BorderSide(
-                                color: Colors.blue,
-                              )),
-                          enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: BorderSide(
-                                color: Colors.pink,
-                              ))),
-                    ),
-                  ),
-                  Container(
-                    width: ScreenUtil().setWidth(400),
-                    height: ScreenUtil().setHeight(100),
-                    child: TextFormField(
-                      onSaved: (val){
-                        setState(() {
-                          _Location = val;
-                        });
-                      },
-                      decoration: InputDecoration(
-                          hintText: 'Product Location',
-                          focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: BorderSide(
-                                color: Colors.blue,
-                              )),
-                          enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: BorderSide(
-                                color: Colors.pink,
-                              ))),
-                    ),
-                  ),
-                  Container(
-                    width: ScreenUtil().setWidth(400),
-                    height: ScreenUtil().setHeight(100),
-                    child: TextFormField(
-                      onSaved: (val){
-                        setState(() {
-                          _Quantity = val;
-                        });
-                      },
-                      decoration: InputDecoration(
-                          hintText: 'Product quantity',
-                          focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: BorderSide(
-                                color: Colors.blue,
-                              )),
-                          enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: BorderSide(
-                                color: Colors.pink,
-                              ))),
-                    ),
-                  ),
                   SizedBox(
-                    height: ScreenUtil().setHeight(5),
+                    height: ScreenUtil().setHeight(20),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -277,7 +213,7 @@ class _AddProductState extends State<AddProduct> {
                           child: RaisedButton(
                             color: Colors.green[100],
                             child:Text(
-                              'Submit',style: TextStyle(
+                              'Publish',style: TextStyle(
                               fontSize: 14,
                               fontFamily: SLS.font,
                               ),
@@ -286,36 +222,13 @@ class _AddProductState extends State<AddProduct> {
                               if(_globalKey.currentState.validate()){
                                 _globalKey.currentState.save();
                                 _store.addPost(Postes(
-                                  pName: _Name,
-                                  pPrice: _Price,
-                                  pDescription: _Description,
                                   pLocation: _Location,
-                                  pCategory: _Category,
-                                  pQuantity: _Quantity,
-
+                                  pText: _PostText,
                                 ));
-
                               }
                             },
                           ),
                         ),
-                      Container(
-                        color: Colors.red,
-                        height: ScreenUtil().setHeight(50),
-                        width: ScreenUtil().setWidth(150),
-                        child: RaisedButton(
-                          color: Colors.yellow[100],
-                          child:Text(
-                            'edit',style: TextStyle(
-                            fontSize: 14,
-                            fontFamily: SLS.font,
-                          ),
-                          ),
-                          onPressed: (){
-                            Navigator.pushNamed(context, manageProduct.id);
-                          },
-                        ),
-                      ),
                     ],
                   ),
                 ],

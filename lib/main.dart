@@ -1,9 +1,5 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:viplive/models/postes.dart';
-import 'package:viplive/screens/Provider/modelHUD.dart';
 import 'package:viplive/services/auth.dart';
 import 'package:viplive/services/RootPage.dart';
 import 'package:viplive/screens/Start.dart';
@@ -32,14 +28,12 @@ import 'screens/DASHBOARD/Seller_All_orders.dart';
 import 'screens/DASHBOARD/Seller_Payment_details.dart';
 import 'screens/DASHBOARD/Seller_Payout_History.dart';
 import 'screens/DASHBOARD/Seller_Request_Payout.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'screens/DASHBOARD/Dashboard_Seller_checked.dart';
 import 'screens/DASHBOARD/Dashboard_Admin_checked.dart';
 import 'screens/HOMEPAGE/messages.dart';
 import 'screens/HOMEPAGE/notifications.dart';
 import 'screens/Productes/addProduct.dart';
-import 'screens/Productes/manageProduct.dart';
-import 'screens/Productes/editProduct.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -84,8 +78,6 @@ class MyApp extends StatelessWidget {
           Messages.id: (context) => Messages(),
           notifications.id: (context) => notifications(),
           AddProduct.id: (context) => AddProduct(),
-          manageProduct.id: (context) => manageProduct(),
-          editProduct.id: (context) => editProduct(),
         },
     );
   }

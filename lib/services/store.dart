@@ -10,12 +10,8 @@ class store {
 
   addPost(Postes postes) {
     _firestore.collection(KProductCollection).add({
-      KProductName: postes.pName,
-      KProductDescription: postes.pDescription,
-      KProductLocation: postes.pLocation,
-      KProductPrice: postes.pPrice,
-      KProductCategory: postes.pCategory,
-      KProductQuantity: postes.pQuantity,
+      KPostsLocation: postes.pLocation,
+      KPostsText: postes.pText,
     });
   }
 
