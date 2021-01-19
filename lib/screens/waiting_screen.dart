@@ -41,24 +41,26 @@ class _waiting_screenState extends State<waiting_screen> {
                         text: TextSpan(
                           children: <TextSpan>[
                             TextSpan(
-                                text: 'SLS',
+                                text: 'BUSINESS',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    fontFamily: KFont,
                                     fontSize: 30,
-                                    color: Color(0xFFF899C0))),
+                                    color: Colors.teal)),
                             TextSpan(
-                                text: ' Livestream                 ',
+                                text: ' CARD                 ',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 30,
                                     color: Color(0xFFF010101))),
                             TextSpan(
                                 text:
-                                    'Something different, new, this is our app.',
+                                'Mr demri Project',
                                 style: TextStyle(
                                     fontWeight: FontWeight.normal,
+                                    fontFamily: KFont,
                                     fontSize: 13,
-                                    color: Color(0xFFF899C0))),
+                                    color: Colors.pink  )),
                           ],
                         ),
                       ),
