@@ -89,8 +89,8 @@ class _signUpEmailState extends State<signUpEmail> {
                         //   image: AssetImage('assets/logo.ico'),
                         // ),
                         Positioned(
-                          top: 2,
-                          height: 100,
+                          top: 15,
+                          height: 150,
                           width: 250,
                           child: Container(
                             child: RichText(
@@ -128,7 +128,7 @@ class _signUpEmailState extends State<signUpEmail> {
                 ),
               ),
               SizedBox(
-                height: height * 0.20,
+                height: height * 0.27,
               ),
                Form(
                     key: _formkey,
