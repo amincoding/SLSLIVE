@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="design.xsl" type="text/xsl"?>
+<!-- abdediem amin -->
+<Ordinateurs
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="tp_schema.xsd">
+   <Ordinateur id="01">
+      <Model>Apple</Model>
+      <Date_mise_en_service>2021</Date_mise_en_service>
+      <ip>41.101.143.13</ip>
+      <System_de_exploitation>MacOs Big sur (11.3 beta 7)</System_de_exploitation>
+      <Ram>16gb unified memory</Ram>
+      <Stockage>256 ssd</Stockage>
+      <Processeur>M1 Soc</Processeur>
+      <Frequence>3.2GHZ</Frequence>
+   </Ordinateur>
+   <Ordinateur id="02">
+      <Model>Dell-XPS-13</Model>
+      <Date_mise_en_service>2020</Date_mise_en_service>
+      <ip>41.101.143.03</ip>
+      <System_de_exploitation>Windows 10</System_de_exploitation>
+      <Ram>16GB 3200MHZ</Ram>
+      <Stockage>512GB ssd</Stockage>
+      <Processeur>I9 11400H</Processeur>
+      <Frequence>3.7GHZ</Frequence>
+   </Ordinateur>
+   <Ordinateur id="03">
+      <Model>ASUS</Model>
+      <Date_mise_en_service>2021</Date_mise_en_service>
+      <ip>41.101.143.73</ip>
+      <System_de_exploitation>Windows 10</System_de_exploitation>
+      <Ram>32GB 3200MHZ</Ram>
+      <Stockage>512GB ssd</Stockage>
+      <Processeur>Rayzen9 5900HS</Processeur>
+      <Frequence>4.1GHZ</Frequence>
+   </Ordinateur>
+   <Ordinateur id="04">
+      <Model>POP OS</Model>
+      <Date_mise_en_service>2018</Date_mise_en_service>
+      <ip>41.101.143.83</ip>
+      <System_de_exploitation>Linux-x64bit</System_de_exploitation>
+      <Ram>8GB</Ram>
+      <Stockage>256GB ssd</Stockage>
+      <Processeur>I7-8700HQ</Processeur>
+      <Frequence>3.1GH</Frequence>
+   </Ordinateur>
+   <Ordinateur id="05">
+      <Model>Chrome_Book</Model>
+      <Date_mise_en_service>2019</Date_mise_en_service>
+      <ip>41.101.143.82</ip>
+      <System_de_exploitation>CHrome-OS</System_de_exploitation>
+      <Ram>8GB</Ram>
+      <Stockage>256GB ssd</Stockage>
+      <Processeur>Arm-based Qualcome</Processeur>
+      <Frequence>2.4GHZ</Frequence>
+   </Ordinateur>
+   <Ordinateur id="06">
+      <Model>ACER-Predator</Model>
+      <Date_mise_en_service>2017</Date_mise_en_service>
+      <ip>41.101.143.81</ip>
+      <System_de_exploitation>Windows-10</System_de_exploitation>
+      <Ram>64GB</Ram>
+      <Stockage>1TB ssd</Stockage>
+      <Processeur>I9-10900K</Processeur>
+      <Frequence>4.9GHZ</Frequence>
+   </Ordinateur>
+</Ordinateurs>

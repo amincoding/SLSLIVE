@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Ordinateurs (Ordinateur+)>
+<!ELEMENT Ordinateur (Model,Date_mise_en_service,ip,System_de_exploitation,Ram,Stockage,Processeur,Frequence)>
+<!ATTLIST Ordinateur id NMTOKEN #REQUIRED>
+<!ELEMENT Model (#PCDATA)>
+<!ELEMENT Date_mise_en_service (#PCDATA)>
+<!ELEMENT ip (#PCDATA)>
+<!ELEMENT System_de_exploitation (#PCDATA)>
+<!ELEMENT Ram (#PCDATA)>
+<!ELEMENT Stockage (#PCDATA)>
+<!ELEMENT Processeur (#PCDATA)>
+<!ELEMENT Frequence (#PCDATA)>

@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Ordinateurs">
+    <xs:annotation>
+      <xs:documentation>abdediem amin</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Ordinateur" maxOccurs="6" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Model"/>
+              <xs:element type="xs:short" name="Date_mise_en_service"/>
+              <xs:element type="xs:string" name="ip"/>
+              <xs:element type="xs:string" name="System_de_exploitation"/>
+              <xs:element type="xs:string" name="Ram"/>
+              <xs:element type="xs:string" name="Stockage"/>
+              <xs:element type="xs:string" name="Processeur"/>
+              <xs:element type="xs:string" name="Frequence"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
