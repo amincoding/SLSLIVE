@@ -89,32 +89,34 @@ class _signUpEmailState extends State<signUpEmail> {
                         //   image: AssetImage('assets/logo.ico'),
                         // ),
                         Positioned(
-                          top: 1,
-                          height: 50,
-                          width: 240,
+                          top: 15,
+                          height: 150,
+                          width: 250,
                           child: Container(
                             child: RichText(
                               text: TextSpan(
                                 children: <TextSpan>[
                                   TextSpan(
-                                      text: 'SLS',
+                                      text: 'BUSINESS',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
+                                          fontFamily: KFont,
                                           fontSize: 30,
-                                          color: Color(0xFFF899C0))),
+                                          color: Colors.teal)),
                                   TextSpan(
-                                      text: ' Livestream                 ',
+                                      text: ' CARD                 ',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 30,
                                           color: Color(0xFFF010101))),
                                   TextSpan(
                                       text:
-                                          'Something different, new, this is our app.',
+                                      'Mr demri Project',
                                       style: TextStyle(
                                           fontWeight: FontWeight.normal,
+                                          fontFamily: KFont,
                                           fontSize: 13,
-                                          color: Color(0xFFF899C0))),
+                                          color: Colors.pink  )),
                                 ],
                               ),
                             ),
@@ -125,14 +127,8 @@ class _signUpEmailState extends State<signUpEmail> {
                   ),
                 ),
               ),
-              Center(
-                heightFactor: 0.3,
-                child: Container(
-                  child: SvgPicture.asset('assets/face.svg'),
-                ),
-              ),
               SizedBox(
-                height: height * 0.03,
+                height: height * 0.27,
               ),
                Form(
                     key: _formkey,

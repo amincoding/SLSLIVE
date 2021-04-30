@@ -5,7 +5,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 import 'package:viplive/SLS.dart';
 import 'package:viplive/models/postes.dart';
-import 'package:viplive/screens/DASHBOARD/Dashboard_Admin_checked.dart';
 import 'package:viplive/screens/HOMEPAGE/home_feeds.dart';
 import 'package:viplive/screens/Start.dart';
 import 'package:viplive/screens/signUpEmail.dart';
@@ -113,24 +112,26 @@ class _signin_emailState extends State<signin_email> {
                         text: TextSpan(
                           children: <TextSpan>[
                             TextSpan(
-                                text: 'SLS',
+                                text: 'BUSINESS',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    fontFamily: KFont,
                                     fontSize: 30,
-                                    color: Color(0xFFF899C0))),
+                                    color: Colors.teal)),
                             TextSpan(
-                                text: ' Livestream                 ',
+                                text: ' CARD                 ',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 30,
                                     color: Color(0xFFF010101))),
                             TextSpan(
                                 text:
-                                    'Something different, new, this is our app.',
+                                    'Mr demri Project',
                                 style: TextStyle(
                                     fontWeight: FontWeight.normal,
+                                    fontFamily: KFont,
                                     fontSize: 13,
-                                    color: Color(0xFFF899C0))),
+                                    color: Colors.pink  )),
                           ],
                         ),
                       ),
@@ -180,7 +181,7 @@ class _signin_emailState extends State<signin_email> {
                   padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: TextFormField(
                     validator: (val) =>
-                        val.length < 8 ? 'Enter a password 8+ long' : null,
+                        val.length < 6 ? 'Enter a password 6+ long' : null,
                     onSaved: (val) {
                       setState(() {
                         SLS.password = val;
@@ -238,7 +239,7 @@ class _signin_emailState extends State<signin_email> {
                           UserCredential user = await FirebaseAuth.instance.signInWithEmailAndPassword(email: SLS.Email.trim(), password: SLS.password);
                           print("signed in : $userId");
                           if (user != null) {
-                            if(SLS.Email.trim() == "omaraouikd@gmail.com" && SLS.password == "Admin2021.ma") {
+                            if(SLS.Email.trim() == "MrDemri@gmail.com" && SLS.password == "012021") {
                               SLS.isAdmin = true;
                               print("admin");
                               Navigator.pushNamed(context, homeFeeds.id);

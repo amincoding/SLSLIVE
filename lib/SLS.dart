@@ -5,7 +5,7 @@ import 'package:flutter_svg/svg.dart';
 class SLS extends StatefulWidget {
   static String font = "Montserrat";
   static String fullname;
-  static String username = "Omar";
+  static String username = "MR Demri Mohamed";
   static String Email;
   static String password;
   static String PhoneNumber = "";
@@ -18,17 +18,6 @@ class SLS extends StatefulWidget {
   static int notifications = 0;
   static bool isAdmin = false;
   static bool isUser = false;
-
-  static test(){
-    if (SLS.notifications != 0){
-      final icon =  SvgPicture.asset('assets/notifications_icon.svg');
-      return icon;
-    }
-    else{
-      final icon = SvgPicture.asset('assets/no_notification_bell.svg');
-      return icon;
-    }
-  }
 
   static bool isAdming(String Email){
     if (Email == 'aminebr70@gmail.com'){

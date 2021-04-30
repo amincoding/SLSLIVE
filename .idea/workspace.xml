@@ -3,22 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="ecd5515c-46ce-42b0-bbcf-7857cb2fd926" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/postes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/postes.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SLS.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SLS.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/HOMEPAGE/home_feeds.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/HOMEPAGE/home_feeds.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/Productes/addProduct.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/Productes/addProduct.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/Productes/editProduct.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/Productes/manageProduct.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/store.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/store.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/TabViewCustom.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/signUpEmail.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/signUpEmail.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="pixel_API_30" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_XL_API_30" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -211,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606964552206</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="second">
+      <created>1611084051318</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611084051318</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -232,14 +233,14 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="363" y="126" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.30.1366.738@0.30.1366.738" timestamp="1606576765609" />
-    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607192639941">
+    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611089791984">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1366.738@0.30.1366.738" timestamp="1607192639941" />
-    <state x="337" y="30" key="CommitChangelistDialog2" timestamp="1606964550125">
+    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1366.738@0.30.1366.738" timestamp="1611089791984" />
+    <state x="337" y="30" key="CommitChangelistDialog2" timestamp="1611084048983">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="337" y="30" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1606964550125" />
+    <state x="337" y="30" key="CommitChangelistDialog2/0.30.1366.738@0.30.1366.738" timestamp="1611084048983" />
     <state width="493" height="452" key="DebuggerActiveHint" timestamp="1606751784319">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -248,22 +249,22 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="121" y="153" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1606328648329" />
-    <state width="1032" height="154" key="GridCell.Tab.0.bottom" timestamp="1607005344103">
+    <state width="1327" height="154" key="GridCell.Tab.0.bottom" timestamp="1611086212789">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1032" height="154" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1607005344103" />
-    <state width="1032" height="154" key="GridCell.Tab.0.center" timestamp="1607005344103">
+    <state width="1327" height="154" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1611086212789" />
+    <state width="1327" height="154" key="GridCell.Tab.0.center" timestamp="1611086212788">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1032" height="154" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1607005344103" />
-    <state width="1032" height="154" key="GridCell.Tab.0.left" timestamp="1607005344102">
+    <state width="1327" height="154" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1611086212788" />
+    <state width="1327" height="154" key="GridCell.Tab.0.left" timestamp="1611086212788">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1032" height="154" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1607005344102" />
-    <state width="1032" height="154" key="GridCell.Tab.0.right" timestamp="1607005344103">
+    <state width="1327" height="154" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1611086212788" />
+    <state width="1327" height="154" key="GridCell.Tab.0.right" timestamp="1611086212788">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1032" height="154" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1607005344103" />
+    <state width="1327" height="154" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1611086212788" />
     <state x="198" y="141" key="IDE.errors.dialog" timestamp="1606822750508">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -272,18 +273,18 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="184" y="41" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1607200286232" />
-    <state x="275" y="131" key="Vcs.Push.Dialog.v2" timestamp="1606964559559">
+    <state x="275" y="131" key="Vcs.Push.Dialog.v2" timestamp="1611084066089">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="275" y="131" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1606964559559" />
+    <state x="275" y="131" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1611084066089" />
     <state x="82" y="150" width="1182" height="554" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1606997275860">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="82" y="150" width="1182" height="554" key="com.android.tools.idea.avdmanager.AvdListDialog/0.30.1366.738@0.30.1366.738" timestamp="1606997275860" />
-    <state x="62" y="217" key="com.intellij.ide.util.TipDialog" timestamp="1607199844435">
+    <state x="62" y="217" key="com.intellij.ide.util.TipDialog" timestamp="1611079068200">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="62" y="217" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1607199844435" />
+    <state x="62" y="217" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1611079068200" />
     <state x="492" y="315" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606832842036">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
